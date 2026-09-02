@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Learning</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22c55e;
+      --accent-2: #38bdf8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #111827 50%, #1e293b);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(100%, 500px);
+      background: rgba(17, 24, 39, 0.9);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 28px 22px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent-2);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      line-height: 1.1;
+    }
+
+    p {
+      color: var(--muted);
+      margin: 0 0 22px;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .list {
+      text-align: left;
+      background: var(--card);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 22px;
+    }
+
+    .list strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #f8fafc;
+    }
+
+    .list ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .button {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), #16a34a);
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Learn Fast</div>
+    <h1>Web Development</h1>
+    <p>
+      Start small, learn the basics, and build real projects. HTML, CSS, and JavaScript are the foundation.
+    </p>
+
+    <div class="list">
+      <strong>What you will learn:</strong>
+      <ul>
+        <li>HTML structure</li>
+        <li>CSS styling</li>
+        <li>JavaScript logic</li>
+        <li>Responsive design</li>
+      </ul>
+    </div>
+
+    <a
+      class="button"
+      href="https://chat.whatsapp.com/DsVNmAKqpjL2jAnUUHvxRc?s=cl&p=i&mlu=4&ilr=4"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Join WhatsApp Group
+    </a>
+  </div>
+</body>
+</html>
